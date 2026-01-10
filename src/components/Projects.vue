@@ -1,0 +1,116 @@
+<template>
+  <section id="projects" class="py-16 bg-gradient-to-b from-blue-50 to-indigo-50/30">
+    <div class="container mx-auto px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4">
+          <span class="text-indigo-600 font-semibold text-sm uppercase tracking-wider">Mes réalisations</span>
+          <div class="h-1 w-12 bg-gradient-to-r from-indigo-500 to-teal-500 mx-auto mt-2 rounded-full"></div>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+          Projets <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600">personnels</span>
+        </h2>
+        <p class="text-slate-700 max-w-2xl mx-auto">
+          Applications web complètes développées avec des technologies modernes
+        </p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ProjectCard 
+            v-for="project in projects"
+            :key="project.id"
+            :title="project.title"
+            :description="project.description"
+            :technologies="project.technologies"
+            :category="project.category"
+            :link="project.link"
+          />
+        </div>
+
+        <!-- View More Projects -->
+        <div class="mt-12 text-center">
+          <a 
+            href="https://github.com/RakotoarisoEConstanio_" 
+            target="_blank"
+            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-white to-blue-50 text-indigo-700 rounded-lg border-2 border-indigo-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 hover:border-indigo-400 transition-all duration-300 font-medium shadow-sm"
+          >
+            Voir plus sur GitHub
+            <svg class="w-5 h-5 ml-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import ProjectCard from './ProjectCard.vue'
+
+const projects = [
+  {
+    id: 1,
+    title: 'Système ERP Complet',
+    description: 'Application ERP intégrant la gestion des ressources humaines, finances et e-commerce',
+    technologies: ['Vue.js', 'ASP.NET', 'PostgreSQL'],
+    category: 'Application Web',
+    link: '#',
+    color: 'indigo'
+  },
+  {
+    id: 2,
+    title: 'Plateforme de Films',
+    description: 'Site de gestion et vente de films en ligne avec système de paiement',
+    technologies: ['Laravel', 'MySQL', 'Stripe'],
+    category: 'E-commerce',
+    link: '#',
+    color: 'teal'
+  },
+  {
+    id: 3,
+    title: 'Gestion Médico-sociale',
+    description: 'Application pour la gestion des patients et rendez-vous médicaux',
+    technologies: ['Vue.js', 'Express.js', 'MySQL'],
+    category: 'Santé',
+    link: '#',
+    color: 'emerald'
+  },
+  {
+    id: 4,
+    title: 'Gestion de Vente Informatique',
+    description: 'Plateforme de gestion de vente et stock d\'ordinateurs',
+    technologies: ['Nuxt.js', 'ASP.NET', 'PostgreSQL'],
+    category: 'E-commerce',
+    link: '#',
+    color: 'blue'
+  },
+  {
+    id: 5,
+    title: 'Gestion de Stock',
+    description: 'Système de suivi de stock avec notifications et rapports',
+    technologies: ['Nuxt.js', 'ASP.NET', 'PostgreSQL'],
+    category: 'Gestion',
+    link: '#',
+    color: 'purple'
+  }
+]
+</script>
+
+<style scoped>
+/* Animation simple d'apparition */
+section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>

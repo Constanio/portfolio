@@ -1,0 +1,205 @@
+<template>
+  <section id="skills" class="py-16 bg-gradient-to-b from-teal-50/30 to-blue-50">
+    <div class="container mx-auto px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <div class="inline-block mb-4">
+          <span class="text-indigo-600 font-semibold text-sm uppercase tracking-wider">Mes expertises</span>
+          <div class="h-1 w-12 bg-gradient-to-r from-indigo-500 to-teal-500 mx-auto mt-2 rounded-full"></div>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+          Compétences <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600">techniques</span>
+        </h2>
+        <p class="text-slate-700 max-w-2xl mx-auto">
+          Technologies et outils que j'utilise pour développer des applications modernes
+        </p>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Programming Languages -->
+          <div class="bg-gradient-to-br from-white to-indigo-50 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-indigo-100">
+            <div class="flex items-center mb-8">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-indigo-100 to-purple-100 flex items-center justify-center mr-4 border border-indigo-200">
+                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-800">Langages</h3>
+            </div>
+            
+            <div class="space-y-6">
+              <div v-for="(language, index) in languages" :key="index" class="flex items-center justify-between group p-3 rounded-lg hover:bg-indigo-50/50 transition-colors">
+                <div class="flex items-center">
+                  <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-50 to-purple-50 flex items-center justify-center mr-4 border border-indigo-200 group-hover:border-indigo-300 transition-colors">
+                    <span class="text-indigo-600 font-medium group-hover:text-indigo-700">{{ language.icon }}</span>
+                  </div>
+                  <span class="font-medium text-slate-800">{{ language.name }}</span>
+                </div>
+                <div class="text-right">
+                  <div class="text-xs text-slate-500 mb-1">Niveau</div>
+                  <div class="flex space-x-1">
+                    <div v-for="i in 5" :key="i" 
+                         class="w-2 h-2 rounded-full transition-all duration-300"
+                         :class="i <= language.level ? 'bg-gradient-to-r from-indigo-500 to-purple-500' : 'bg-slate-300'">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="bg-gradient-to-br from-white to-teal-50 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-teal-100">
+            <div class="flex items-center mb-8">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-teal-100 to-emerald-100 flex items-center justify-center mr-4 border border-teal-200">
+                <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-800">Bases de données</h3>
+            </div>
+            
+            <div class="space-y-6">
+              <div v-for="(database, index) in databases" :key="index" class="group p-4 rounded-lg hover:bg-teal-50/50 transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-50 to-emerald-50 flex items-center justify-center mr-4 border border-teal-200 group-hover:border-teal-300 transition-colors">
+                      <span class="text-teal-600 font-medium group-hover:text-teal-700">DB</span>
+                    </div>
+                    <div>
+                      <span class="font-medium text-slate-800 block">{{ database.name }}</span>
+                      <span class="text-xs text-slate-500">{{ database.type }}</span>
+                    </div>
+                  </div>
+                  <span class="px-3 py-1 bg-gradient-to-r from-teal-100 to-emerald-100 text-teal-700 rounded-full text-sm font-medium border border-teal-200">
+                    {{ database.experience }}
+                  </span>
+                </div>
+                <div class="h-2 bg-slate-200 rounded-full overflow-hidden">
+                  <div 
+                    class="h-full bg-gradient-to-r from-teal-500 to-emerald-500 rounded-full transition-all duration-1000"
+                    :style="{ width: database.experience }"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frameworks & Tools -->
+          <div class="bg-gradient-to-br from-white to-amber-50 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-amber-100">
+            <div class="flex items-center mb-8">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-amber-100 to-orange-100 flex items-center justify-center mr-4 border border-amber-200">
+                <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-800">Frameworks & Outils</h3>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <div v-for="(framework, index) in frameworks" :key="index" 
+                   class="bg-gradient-to-br from-slate-50 to-white rounded-lg p-4 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 hover:border-indigo-200 border border-slate-200 transition-all duration-300 group">
+                <div class="flex items-center">
+                  <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-slate-50 flex items-center justify-center mr-3 border border-slate-300 group-hover:border-indigo-300 transition-colors">
+                    <span class="text-slate-600 group-hover:text-indigo-600 text-sm font-medium">{{ framework.icon }}</span>
+                  </div>
+                  <div>
+                    <div class="font-medium text-slate-800 group-hover:text-indigo-700">{{ framework.name }}</div>
+                    <div class="text-xs text-slate-500 group-hover:text-indigo-500">{{ framework.category }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Skills -->
+        <div class="mt-12 bg-gradient-to-r from-indigo-50/80 to-teal-50/80 rounded-2xl p-8 border border-indigo-100 backdrop-blur-sm">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-6 md:mb-0">
+              <h3 class="text-2xl font-bold text-slate-800 mb-2">Autres compétences</h3>
+              <p class="text-slate-700">Outils et méthodes complémentaires</p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 bg-gradient-to-br from-white to-slate-50 text-slate-800 rounded-lg font-medium shadow-sm border border-slate-200 hover:border-indigo-300 hover:bg-white transition-colors">
+                Git & GitHub
+              </span>
+              <span class="px-4 py-2 bg-gradient-to-br from-white to-blue-50 text-blue-800 rounded-lg font-medium shadow-sm border border-blue-200 hover:border-blue-300 hover:bg-white transition-colors">
+                Docker
+              </span>
+              <span class="px-4 py-2 bg-gradient-to-br from-white to-teal-50 text-teal-800 rounded-lg font-medium shadow-sm border border-teal-200 hover:border-teal-300 hover:bg-white transition-colors">
+                REST API
+              </span>
+              <span class="px-4 py-2 bg-gradient-to-br from-white to-amber-50 text-amber-800 rounded-lg font-medium shadow-sm border border-amber-200 hover:border-amber-300 hover:bg-white transition-colors">
+                Agile/Scrum
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+const languages = [
+  { name: 'JavaScript', level: 5, icon: 'JS' },
+  { name: 'Golang', level: 4, icon: 'GO' },
+  { name: 'Java', level: 3, icon: 'JA' },
+  { name: '.NET', level: 4, icon: '.NET' },
+  { name: 'PHP', level: 4, icon: 'PHP' }
+]
+
+const databases = [
+  { name: 'MySQL', type: 'Relationnel', experience: '90%' },
+  { name: 'PostgreSQL', type: 'Relationnel', experience: '85%' },
+  { name: 'MongoDB', type: 'NoSQL', experience: '75%' }
+]
+
+const frameworks = [
+  { name: 'Vue.js', category: 'Frontend', icon: 'Vue' },
+  { name: 'React Native', category: 'Mobile', icon: 'RN' },
+  { name: 'ASP.NET', category: 'Backend', icon: 'ASP' },
+  { name: 'Spring Boot', category: 'Backend', icon: 'SB' },
+  { name: 'Fiber', category: 'Backend', icon: 'FB' },
+  { name: 'Laravel', category: 'Backend', icon: 'LV' }
+]
+</script>
+
+<style scoped>
+/* Animations */
+section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation pour les barres de progression */
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+}
+
+.h-2 > div {
+  animation: slideIn 1s ease-out;
+}
+
+/* Effet de survol pour les cartes */
+.bg-gradient-to-br {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-gradient-to-br:hover {
+  transform: translateY(-4px);
+}
+</style>
