@@ -1,16 +1,16 @@
 <template>
-  <section id="projects" class="py-16 bg-gradient-to-b from-blue-50 to-indigo-50/30">
+  <section id="projects" class="py-16 bg-gradient-to-b from-blue-50 to-indigo-50/30 dark:from-slate-900 dark:to-slate-950 transition-colors duration-500">
     <div class="container mx-auto px-6">
       <!-- Section Header -->
       <div class="text-center mb-12">
         <div class="inline-block mb-4">
-          <span class="text-indigo-600 font-semibold text-sm uppercase tracking-wider">Mes réalisations</span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm uppercase tracking-wider">Mes réalisations</span>
           <div class="h-1 w-12 bg-gradient-to-r from-indigo-500 to-teal-500 mx-auto mt-2 rounded-full"></div>
         </div>
-        <h2 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-          Projets <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600">personnels</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-4">
+          Projets <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600 dark:from-indigo-400 dark:to-teal-400">personnels</span>
         </h2>
-        <p class="text-slate-700 max-w-2xl mx-auto">
+        <p class="text-slate-700 dark:text-slate-300 max-w-2xl mx-auto">
           Applications web complètes développées avec des technologies modernes
         </p>
       </div>
@@ -32,12 +32,12 @@
         <!-- View More Projects -->
         <div class="mt-12 text-center">
           <a 
-            href="https://github.com/RakotoarisoEConstanio_" 
+            href="https://github.com/Constanio" 
             target="_blank"
-            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-white to-blue-50 text-indigo-700 rounded-lg border-2 border-indigo-300 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 hover:border-indigo-400 transition-all duration-300 font-medium shadow-sm"
+            class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-white to-blue-50 dark:from-slate-800 dark:to-slate-700 text-indigo-700 dark:text-indigo-300 rounded-lg border-2 border-indigo-300 dark:border-indigo-800 hover:bg-gradient-to-r hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:border-indigo-400 dark:hover:border-indigo-600 transition-all duration-300 font-medium shadow-sm"
           >
             Voir plus sur GitHub
-            <svg class="w-5 h-5 ml-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 ml-2 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>

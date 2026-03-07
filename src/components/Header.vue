@@ -1,43 +1,75 @@
 <template>
-  <header class="fixed w-full z-50 transition-all duration-300" :class="isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' : 'bg-gradient-to-r from-indigo-50/95 to-blue-50/95 backdrop-blur-md py-5'">
+  <header class="fixed w-full z-50 transition-all duration-300" :class="isScrolled ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg py-3' : 'bg-gradient-to-r from-indigo-50/95 to-blue-50/95 dark:from-slate-950/95 dark:to-slate-900/95 backdrop-blur-md py-5'">
     <nav class="container mx-auto px-6">
       <div class="flex justify-between items-center">
         <!-- Logo -->
-        <div class="text-2xl font-bold transition-all duration-300" :class="isScrolled ? 'text-indigo-600' : 'text-slate-800'">
-          <span :class="isScrolled ? 'text-slate-800' : 'text-slate-900'">Rakotoarison</span>
+        <div class="text-lg sm:text-2xl font-bold transition-all duration-300" :class="isScrolled ? 'text-indigo-600' : 'text-slate-800 dark:text-white'">
+          <span :class="isScrolled ? 'text-slate-800 dark:text-white' : 'text-slate-900 dark:text-white'">Rakotoarison</span>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600"> Emerson</span>
         </div>
 
         <!-- Desktop Navigation -->
-        <ul class="hidden md:flex space-x-8">
-          <li v-for="item in navItems" :key="item.id">
-            <a 
-              :href="item.href" 
-              class="font-medium transition-all duration-300 relative group"
-              :class="isScrolled ? 'text-slate-700 hover:text-indigo-600' : 'text-slate-800 hover:text-indigo-600'"
-            >
-              {{ item.label }}
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-teal-500 group-hover:w-full transition-all duration-300"></span>
-            </a>
-          </li>
-        </ul>
+        <div class="hidden md:flex items-center space-x-8">
+          <ul class="flex space-x-8">
+            <li v-for="item in navItems" :key="item.id">
+              <a 
+                :href="item.href" 
+                class="font-medium transition-all duration-300 relative group"
+                :class="isScrolled ? 'text-slate-700 dark:text-slate-300 hover:text-indigo-600' : 'text-slate-800 dark:text-slate-200 hover:text-indigo-600'"
+              >
+                {{ item.label }}
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-teal-500 group-hover:w-full transition-all duration-300"></span>
+              </a>
+            </li>
+          </ul>
+          
+          <!-- Dark Mode Toggle Desktop -->
+          <button 
+            @click="toggleDarkMode"
+            class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 border border-slate-200 dark:border-slate-700 shadow-sm"
+            aria-label="Toggle Dark Mode"
+          >
+            <svg v-if="!isDark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.95 16.95l.707.707M7.636 7.636l.707-.707M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+        </div>
 
-        <!-- Mobile Menu Button -->
-        <button 
-          @click="toggleMobileMenu"
-          class="md:hidden p-2 rounded-lg bg-gradient-to-r from-indigo-50 to-blue-50 text-indigo-600 hover:from-indigo-100 hover:to-blue-100 transition-colors duration-300"
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path v-if="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+        <!-- Mobile Menu Button & Dark Mode Toggle -->
+        <div class="md:hidden flex items-center space-x-3">
+          <!-- Dark Mode Toggle Mobile -->
+          <button 
+            @click="toggleDarkMode"
+            class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-amber-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 border border-slate-200 dark:border-slate-700"
+            aria-label="Toggle Dark Mode"
+          >
+            <svg v-if="!isDark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg v-else class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707M16.95 16.95l.707.707M7.636 7.636l.707-.707M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+
+          <button 
+            @click="toggleMobileMenu"
+            class="p-2 rounded-lg bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 text-indigo-600 dark:text-indigo-400 hover:from-indigo-100 hover:to-blue-100 transition-colors duration-300"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path v-if="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Mobile Navigation -->
       <div 
         v-if="mobileMenuOpen"
-        class="md:hidden mt-4 py-4 px-4 bg-white rounded-xl shadow-xl border border-indigo-100 animate-slideDown"
+        class="md:hidden mt-4 py-4 px-4 bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-indigo-100 dark:border-slate-800 animate-slideDown"
       >
         <ul class="space-y-3">
           <li v-for="item in navItems" :key="item.id">
@@ -55,7 +87,7 @@
         <div class="mt-6 pt-6 border-t border-slate-100">
           <div class="flex items-center justify-center space-x-4">
             <a 
-              href="https://github.com/RakotoarisoEConstanio_" 
+              href="https://github.com/Constanio" 
               target="_blank"
               class="p-2 rounded-lg bg-gradient-to-r from-slate-50 to-gray-50 text-slate-700 hover:from-indigo-50 hover:to-purple-50 hover:text-indigo-600 transition-all duration-300"
             >
@@ -83,6 +115,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const isScrolled = ref(false)
 const mobileMenuOpen = ref(false)
+const isDark = ref(false)
 
 const navItems = [
   { id: 1, label: 'Accueil', href: '#home' },
@@ -106,8 +139,31 @@ const closeMobileMenu = () => {
   mobileMenuOpen.value = false
 }
 
+const toggleDarkMode = () => {
+  isDark.value = !isDark.value
+  if (isDark.value) {
+    document.documentElement.classList.add('dark')
+    localStorage.setItem('theme', 'dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+    localStorage.setItem('theme', 'light')
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+  
+  // Initialize theme
+  const savedTheme = localStorage.getItem('theme')
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    isDark.value = true
+    document.documentElement.classList.add('dark')
+  } else {
+    isDark.value = false
+    document.documentElement.classList.remove('dark')
+  }
 })
 
 onUnmounted(() => {

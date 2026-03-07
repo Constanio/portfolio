@@ -1,28 +1,28 @@
 <template>
-  <div class="group bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-slate-200 hover:border-indigo-300 relative">
+  <div class="group bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-500 relative">
     <!-- Color accent based on category -->
     <div class="absolute top-0 left-0 w-2 h-full" :class="getCategoryColor(category)"></div>
     
     <!-- Project Header with Icon -->
     <div class="p-6 pb-4">
       <div class="flex items-start justify-between mb-4">
-        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-50 to-purple-50 flex items-center justify-center border border-indigo-100">
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 text-lg font-bold">
+        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center border border-indigo-100 dark:border-indigo-800/50">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 text-lg font-bold">
             {{ getProjectInitials(title) }}
           </span>
         </div>
-        <span class="px-3 py-1 bg-gradient-to-r from-slate-100 to-slate-50 text-slate-700 rounded-full text-xs font-medium border border-slate-300">
+        <span class="px-3 py-1 bg-gradient-to-r from-slate-100 to-slate-50 dark:from-slate-700 dark:to-slate-800 text-slate-700 dark:text-slate-300 rounded-full text-xs font-medium border border-slate-300 dark:border-slate-600">
           {{ category }}
         </span>
       </div>
 
       <!-- Project Title -->
-      <h3 class="text-xl font-bold text-slate-800 mb-3 group-hover:text-indigo-700 transition-colors">
+      <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-3 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors">
         {{ title }}
       </h3>
 
       <!-- Project Description -->
-      <p class="text-slate-700 mb-6 leading-relaxed">
+      <p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
         {{ description }}
       </p>
     </div>
@@ -33,7 +33,7 @@
         <span 
           v-for="(tech, index) in technologies" 
           :key="tech"
-          class="px-3 py-1.5 bg-gradient-to-br from-slate-50 to-white text-slate-700 rounded-lg text-sm font-medium border border-slate-300 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 hover:text-indigo-700 hover:border-indigo-300 transition-all duration-300 cursor-default"
+          class="px-3 py-1.5 bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium border border-slate-300 dark:border-slate-600 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:text-indigo-700 dark:hover:text-indigo-300 hover:border-indigo-300 dark:hover:border-indigo-500 transition-all duration-300 cursor-default"
           :style="{
             animationDelay: `${index * 100}ms`,
             animation: 'fadeInUp 0.6s ease-out forwards'
@@ -60,7 +60,7 @@
           v-if="link"
           :href="link"
           target="_blank"
-          class="ml-3 p-3 bg-gradient-to-br from-slate-50 to-white text-slate-600 rounded-lg border border-slate-300 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 hover:text-indigo-600 hover:border-indigo-300 transition-all duration-300"
+          class="ml-3 p-3 bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 text-slate-600 dark:text-slate-400 rounded-lg border border-slate-300 dark:border-slate-600 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-500 transition-all duration-300"
           title="Code source"
         >
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -113,8 +113,6 @@ const getCategoryColor = (category) => {
 
 const handleViewProject = () => {
   console.log(`Voir le projet: ${props.title}`)
-  // Pourrait être une navigation vers une page de détail
-  // ou une ouverture de modal
 }
 </script>
 

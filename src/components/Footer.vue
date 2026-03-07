@@ -4,18 +4,18 @@
       <!-- Main Footer Content -->
       <div class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-8">
         <!-- Brand & Description -->
-        <div class="text-center lg:text-left max-w-md">
+        <div class="text-center lg:text-left">
           <div class="text-3xl font-bold mb-4">
             <span class="text-white">Rakotoarison</span>
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-teal-400"> Emerson</span>
           </div>
-          <p class="text-slate-300 mb-6 leading-relaxed">
+          <p class="text-slate-300 mb-6 leading-relaxed max-w-md mx-auto lg:mx-0">
             Développeur Full-Stack passionné par la création d'applications web modernes et performantes.
             Spécialisé en Vue.js, .NET et Go.
           </p>
           
           <!-- Quick Contact -->
-          <div class="flex flex-col sm:flex-row gap-4 mb-6">
+          <div class="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 mb-6">
             <a 
               href="mailto:emersonconstanio2@gmail.com" 
               class="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-indigo-600/20 to-teal-600/20 text-indigo-300 hover:text-white rounded-lg border border-indigo-800 hover:border-indigo-600 transition-all duration-300 group"
@@ -23,16 +23,16 @@
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              emersonconstanio2@gmail.com
+              <span class="whitespace-nowrap">emersonconstanio2@gmail.com</span>
             </a>
             <a 
-              href="tel:0340831979" 
+              href="tel:+261340831979" 
               class="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-teal-600/20 to-emerald-600/20 text-teal-300 hover:text-white rounded-lg border border-teal-800 hover:border-teal-600 transition-all duration-300 group"
             >
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              0340831979
+              <span class="whitespace-nowrap">+261 34 08 319 79</span>
             </a>
           </div>
         </div>
@@ -62,7 +62,7 @@
             <h3 class="font-bold text-lg mb-4 text-white">Réseaux</h3>
             <div class="flex space-x-4">
               <a 
-                href="https://github.com/RakotoarisoEConstanio_" 
+                href="https://github.com/Constanio" 
                 target="_blank"
                 class="w-12 h-12 rounded-full bg-gradient-to-r from-slate-700 to-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 border border-slate-700 hover:border-indigo-500 group"
                 title="GitHub"
