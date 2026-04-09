@@ -3,10 +3,25 @@
     <nav class="container mx-auto px-6">
       <div class="flex justify-between items-center">
         <!-- Logo -->
-        <div class="text-lg sm:text-2xl font-bold transition-all duration-300" :class="isScrolled ? 'text-indigo-600' : 'text-slate-800 dark:text-white'">
-          <span :class="isScrolled ? 'text-slate-800 dark:text-white' : 'text-slate-900 dark:text-white'">Rakotoarison</span>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600"> Emerson</span>
-        </div>
+        <a
+          href="#home"
+          class="font-bold transition-all duration-300 leading-tight"
+          :class="isScrolled ? 'text-indigo-600' : 'text-slate-800 dark:text-white'"
+        >
+          <span
+            class="block text-base sm:text-xl md:text-2xl truncate max-w-[150px] sm:max-w-none"
+            :class="isScrolled ? 'text-slate-800 dark:text-white' : 'text-slate-900 dark:text-white'"
+            title="Rakotoarison"
+          >
+            Rakotoarison
+          </span>
+          <span
+            class="block text-sm sm:text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-teal-600 truncate max-w-[150px] sm:max-w-none"
+            title="Emerson Constanio"
+          >
+            Emerson Constanio
+          </span>
+        </a>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">

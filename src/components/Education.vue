@@ -17,6 +17,64 @@
 
       <!-- Timeline Container -->
       <div class="max-w-4xl mx-auto">
+        <!-- Timeline Item 0 - M2 -->
+        <div class="relative mb-12">
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            <!-- Date Badge -->
+            <div class="md:w-1/4">
+              <div class="bg-gradient-to-r from-indigo-600 to-teal-600 text-white px-6 py-3 rounded-xl shadow-lg inline-block border border-indigo-500">
+                <div class="font-bold text-lg">2025 - 2026</div>
+                <div class="text-sm opacity-90">1 an</div>
+              </div>
+            </div>
+
+            <!-- Content Card -->
+            <div class="md:w-3/4">
+              <div class="bg-gradient-to-br from-white to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-8 border-l-4 border-indigo-500 hover:shadow-xl transition-all duration-300 border border-indigo-100 dark:border-slate-700">
+                <!-- Degree Level Badge -->
+                <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-100 to-teal-100 dark:from-indigo-900/30 dark:to-teal-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-semibold mb-4 border border-indigo-200 dark:border-indigo-800/50">
+                  <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                  Master 2
+                </div>
+
+                <h3 class="text-2xl font-bold text-slate-800 dark:text-white mb-3">
+                  Ingénierie Géospatiale et Technologie d'Information
+                </h3>
+                
+                <div class="flex items-center text-slate-600 dark:text-slate-400 mb-4">
+                  <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-100 to-teal-100 dark:from-indigo-900/30 dark:to-teal-900/30 flex items-center justify-center mr-3 border border-indigo-200 dark:border-indigo-800/50">
+                    <svg class="w-4 h-4 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <span class="font-medium">EMIT, Fianarantsoa</span>
+                </div>
+
+                <p class="text-slate-700 dark:text-slate-300 mb-4">
+                  Approfondissement et spécialisation en technologies géospatiales et systèmes d'information, 
+                  avec une orientation développement d'applications.
+                </p>
+
+                <!-- Skills Tags -->
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-slate-700 dark:to-slate-800 text-indigo-700 dark:text-indigo-300 rounded-full text-sm border border-indigo-200 dark:border-slate-600">
+                    Géomatique
+                  </span>
+                  <span class="px-3 py-1 bg-gradient-to-r from-teal-50 to-teal-100 dark:from-slate-700 dark:to-slate-800 text-teal-700 dark:text-teal-300 rounded-full text-sm border border-teal-200 dark:border-slate-600">
+                    SIG
+                  </span>
+                  <span class="px-3 py-1 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-slate-700 dark:to-slate-800 text-purple-700 dark:text-purple-300 rounded-full text-sm border border-purple-200 dark:border-slate-600">
+                    Analyse spatiale
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline connector for mobile -->
+          <div class="md:hidden absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-300 to-teal-300 dark:from-indigo-900 dark:to-teal-900 -z-10"></div>
+        </div>
+
         <!-- Timeline Item 1 - M1 -->
         <div class="relative mb-12">
           <div class="flex flex-col md:flex-row gap-8 items-start">
@@ -258,7 +316,7 @@
               <div class="text-center lg:text-left">
                 <h3 class="text-2xl font-bold text-slate-800 dark:text-white mb-2">Parcours continu</h3>
                 <p class="text-slate-700 dark:text-slate-300">
-                  4 années d'études spécialisées en développement web et technologies de l'information
+                  5 années d'études spécialisées en développement web et technologies de l'information
                 </p>
               </div>
               <div class="w-full lg:w-auto">

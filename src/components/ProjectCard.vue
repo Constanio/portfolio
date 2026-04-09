@@ -57,8 +57,8 @@
         
         <!-- GitHub Link -->
         <a 
-          v-if="link"
-          :href="link"
+          v-if="githubLink"
+          :href="githubLink"
           target="_blank"
           class="ml-3 p-3 bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 text-slate-600 dark:text-slate-400 rounded-lg border border-slate-300 dark:border-slate-600 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-500 transition-all duration-300"
           title="Code source"
@@ -86,9 +86,13 @@ const props = defineProps({
     type: String,
     default: 'Application Web'
   },
-  link: {
+  demoLink: {
     type: String,
     default: '#'
+  },
+  githubLink: {
+    type: String,
+    default: ''
   }
 })
 
@@ -112,7 +116,9 @@ const getCategoryColor = (category) => {
 }
 
 const handleViewProject = () => {
-  console.log(`Voir le projet: ${props.title}`)
+  const url = props.demoLink && props.demoLink !== '#' ? props.demoLink : props.githubLink
+  if (!url) return
+  window.open(url, '_blank', 'noopener,noreferrer')
 }
 </script>
 

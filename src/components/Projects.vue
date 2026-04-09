@@ -25,7 +25,8 @@
             :description="project.description"
             :technologies="project.technologies"
             :category="project.category"
-            :link="project.link"
+            :demoLink="project.demoLink"
+            :githubLink="project.githubLink"
           />
         </div>
 
@@ -51,13 +52,24 @@
 import ProjectCard from './ProjectCard.vue'
 
 const projects = [
-  {
+{
     id: 1,
+    title: 'SIRH Flow',
+    description: 'Interface de gestion RH moderne (démo en ligne)',
+    technologies: ['Vue.js', 'Tailwind CSS', 'Netlify'],
+    category: 'Application Web',
+    demoLink: 'https://sirhexamplefront.netlify.app/',
+    githubLink: 'https://github.com/Constanio/SIRH_example_front',
+    color: 'indigo'
+  },  
+{
+    id: 6,
     title: 'Système ERP Complet',
     description: 'Application ERP intégrant la gestion des ressources humaines, finances et e-commerce',
     technologies: ['Vue.js', 'ASP.NET', 'PostgreSQL'],
     category: 'Application Web',
-    link: '#',
+    demoLink: '#',
+    githubLink: '',
     color: 'indigo'
   },
   {
@@ -66,7 +78,8 @@ const projects = [
     description: 'Site de gestion et vente de films en ligne avec système de paiement',
     technologies: ['Laravel', 'MySQL', 'Stripe'],
     category: 'E-commerce',
-    link: '#',
+    demoLink: '#',
+    githubLink: '',
     color: 'teal'
   },
   {
@@ -75,7 +88,8 @@ const projects = [
     description: 'Application pour la gestion des patients et rendez-vous médicaux',
     technologies: ['Vue.js', 'Express.js', 'MySQL'],
     category: 'Santé',
-    link: '#',
+    demoLink: '#',
+    githubLink: '',
     color: 'emerald'
   },
   {
@@ -84,7 +98,8 @@ const projects = [
     description: 'Plateforme de gestion de vente et stock d\'ordinateurs',
     technologies: ['Nuxt.js', 'ASP.NET', 'PostgreSQL'],
     category: 'E-commerce',
-    link: '#',
+    demoLink: '#',
+    githubLink: '',
     color: 'blue'
   },
   {
@@ -93,9 +108,11 @@ const projects = [
     description: 'Système de suivi de stock avec notifications et rapports',
     technologies: ['Nuxt.js', 'ASP.NET', 'PostgreSQL'],
     category: 'Gestion',
-    link: '#',
+    demoLink: '#',
+    githubLink: 'https://github.com/Constanio/Gestion_Stock_golang_back.git',
     color: 'purple'
-  }
+  },
+ 
 ]
 </script>
 
