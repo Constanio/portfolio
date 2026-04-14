@@ -74,23 +74,12 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Plateforme de Films',
-    description: 'Site de gestion et vente de films en ligne avec système de paiement',
-    technologies: ['Laravel', 'MySQL', 'Stripe'],
-    category: 'E-commerce',
-    demoLink: '#',
-    githubLink: '',
-    color: 'teal'
-  },
-  {
-    id: 3,
-    title: 'Gestion Médico-sociale',
-    description: 'Application pour la gestion des patients et rendez-vous médicaux',
-    technologies: ['Vue.js', 'Express.js', 'MySQL'],
-    category: 'Santé',
-    demoLink: '#',
-    githubLink: '',
-    color: 'emerald'
+    title: 'Business Operations Dashboard ',
+    description: 'Application web dédiée à la gestion des opérations commerciales, permettant de suivre et analyser les activités en temps réel.',
+    technologies: ['Vue.js', 'Golang', 'PostgreSQL'],
+    category: 'Application Web',
+    demoLink: 'https://flowerp12.netlify.app/',
+    color: 'indigo'
   },
   {
     id: 4,
