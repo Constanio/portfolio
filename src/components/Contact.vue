@@ -105,7 +105,14 @@
                 Envoyez-moi un message
               </h3>
               
-              <form @submit.prevent="handleSubmit" class="space-y-6">
+              <form 
+                @submit.prevent="handleSubmit" 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                class="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <!-- Name -->
                 <div>
                   <label for="name" class="block text-slate-800 dark:text-slate-200 font-medium mb-2 flex items-center">

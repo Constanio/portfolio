@@ -32,9 +32,9 @@
             <div class="space-y-6">
               <div v-for="(language, index) in languages" :key="index" class="flex items-center justify-between group p-3 rounded-lg hover:bg-indigo-50/50 dark:hover:bg-slate-700/50 transition-colors">
                 <div class="flex items-center">
-                  <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 flex items-center justify-center mr-4 border border-indigo-200 dark:border-indigo-800/50 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-colors">
-                    <span class="text-indigo-600 dark:text-indigo-400 font-medium group-hover:text-indigo-700 dark:group-hover:text-indigo-300">{{ language.icon }}</span>
-                  </div>
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 flex items-center justify-center mr-4 border border-indigo-200 dark:border-indigo-800/50 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-colors">
+                      <i :class="language.icon + ' text-indigo-600 dark:text-indigo-400 text-lg group-hover:text-indigo-700 dark:group-hover:text-indigo-300'"></i>
+                    </div>
                   <span class="font-medium text-slate-800 dark:text-slate-200">{{ language.name }}</span>
                 </div>
                 <div class="text-right">
@@ -66,7 +66,7 @@
                 <div class="flex items-center justify-between mb-3">
                   <div class="flex items-center">
                     <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 flex items-center justify-center mr-4 border border-teal-200 dark:border-teal-800/50 group-hover:border-teal-300 dark:group-hover:border-teal-500 transition-colors">
-                      <span class="text-teal-600 dark:text-teal-400 font-medium group-hover:text-teal-700 dark:group-hover:text-teal-300">DB</span>
+                      <i :class="(database.icon || 'fas fa-database') + ' text-teal-600 dark:text-teal-400 text-lg group-hover:text-teal-700 dark:group-hover:text-teal-300'"></i>
                     </div>
                     <div>
                       <span class="font-medium text-slate-800 dark:text-slate-200 block">{{ database.name }}</span>
@@ -103,7 +103,7 @@
                    class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 rounded-lg p-4 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:border-indigo-200 dark:hover:border-indigo-500 border border-slate-200 dark:border-slate-600 transition-all duration-300 group">
                 <div class="flex items-center">
                   <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center mr-3 border border-slate-300 dark:border-slate-600 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-colors">
-                    <span class="text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 text-sm font-medium">{{ framework.icon }}</span>
+                    <i :class="framework.icon + ' text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 text-sm'"></i>
                   </div>
                   <div>
                     <div class="font-medium text-slate-800 dark:text-slate-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-300">{{ framework.name }}</div>
@@ -145,26 +145,26 @@
 
 <script setup>
 const languages = [
-  { name: 'JavaScript', level: 4, icon: 'JS' },
-  { name: 'Golang', level: 4, icon: 'GO' },
-  { name: 'Java', level: 3, icon: 'JA' },
-  { name: '.NET', level: 4, icon: '.NET' },
-  { name: 'PHP', level: 4, icon: 'PHP' }
+  { name: 'JavaScript', level: 4, icon: 'fab fa-js' },
+  { name: 'Golang', level: 4, icon: 'fab fa-golang' },
+  { name: 'Java', level: 3, icon: 'fab fa-java' },
+  { name: '.NET', level: 4, icon: 'fab fa-microsoft' },
+  { name: 'PHP', level: 4, icon: 'fab fa-php' }
 ]
 
 const databases = [
-  { name: 'MySQL', type: 'Relationnel', experience: '90%' },
-  { name: 'PostgreSQL', type: 'Relationnel', experience: '85%' },
-  { name: 'MongoDB', type: 'NoSQL', experience: '40%' }
+  { name: 'MySQL', type: 'Relationnel', experience: '90%', icon: 'fas fa-database' },
+  { name: 'PostgreSQL', type: 'Relationnel', experience: '85%', icon: 'fas fa-database' },
+  { name: 'MongoDB', type: 'NoSQL', experience: '40%', icon: 'fas fa-leaf' }
 ]
 
 const frameworks = [
-  { name: 'Vue.js', category: 'Frontend', icon: 'Vue' },
-  { name: 'React Native', category: 'Mobile', icon: 'RN' },
-  { name: 'ASP.NET', category: 'Backend', icon: 'ASP' },
-  { name: 'Spring Boot', category: 'Backend', icon: 'SB' },
-  { name: 'Fiber', category: 'Backend', icon: 'FB' },
-  { name: 'Laravel', category: 'Backend', icon: 'LV' }
+  { name: 'Vue.js', category: 'Frontend', icon: 'fab fa-vuejs' },
+  { name: 'React Native', category: 'Mobile', icon: 'fab fa-react' },
+  { name: 'ASP.NET', category: 'Backend', icon: 'fab fa-microsoft' },
+  { name: 'Spring Boot', category: 'Backend', icon: 'fab fa-java' },
+  { name: 'Fiber', category: 'Backend', icon: 'fab fa-golang' },
+  { name: 'Laravel', category: 'Backend', icon: 'fab fa-laravel' }
 ]
 </script>
 

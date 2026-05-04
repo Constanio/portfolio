@@ -55,7 +55,7 @@
               <div class="bg-gradient-to-br from-white to-amber-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-6 mb-6 border-l-4 border-amber-500 border border-amber-100 dark:border-slate-700">
                 <div class="flex flex-col xs:flex-row items-start">
                   <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 border border-amber-200 dark:border-amber-800/50">
-                    <span class="text-amber-600 dark:text-amber-400 text-xl">📊</span>
+                    <i class="fas fa-chart-line text-amber-600 dark:text-amber-400 text-xl"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Projet ERP - Système de gestion centralisé</h4>
@@ -180,7 +180,7 @@
               <div class="bg-gradient-to-br from-white to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-6 mb-6 border-l-4 border-indigo-500 border border-indigo-100 dark:border-slate-700">
                 <div class="flex flex-col xs:flex-row items-start">
                   <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 border border-indigo-200 dark:border-indigo-800/50">
-                    <span class="text-indigo-600 dark:text-indigo-400 text-xl">🏥</span>
+                    <i class="fas fa-hospital text-indigo-600 dark:text-indigo-400 text-xl"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Application de gestion médico-social</h4>
@@ -287,7 +287,7 @@
               <div class="bg-gradient-to-br from-white to-teal-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-6 mb-6 border-l-4 border-teal-500 border border-teal-100 dark:border-slate-700">
                 <div class="flex flex-col xs:flex-row items-start">
                   <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-teal-100 to-emerald-100 dark:from-teal-900/30 dark:to-emerald-900/30 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 border border-teal-200 dark:border-teal-800/50">
-                    <span class="text-teal-600 dark:text-teal-400 text-xl">🌱</span>
+                    <i class="fas fa-leaf text-teal-600 dark:text-teal-400 text-xl"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Application de gestion de production</h4>

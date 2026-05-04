@@ -24,7 +24,7 @@
             <div class="bg-gradient-to-br from-white to-blue-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-lg p-6 sm:p-8 border border-blue-100 dark:border-slate-700 transition-colors duration-500">
               <div class="flex flex-col sm:flex-row items-start mb-6">
                 <div class="w-16 h-16 flex-shrink-0 bg-gradient-to-br from-indigo-100 to-teal-100 dark:from-indigo-900/40 dark:to-teal-900/40 rounded-xl flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 border border-indigo-200 dark:border-slate-700 transition-colors duration-500">
-                  <span class="text-2xl text-indigo-600">👨‍💻</span>
+                  <i class="fas fa-laptop-code text-2xl text-indigo-600"></i>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-slate-800 dark:text-white mb-3">Mon parcours</h3>
@@ -64,7 +64,7 @@
               <div class="space-y-6">
                 <a href="tel:+261 34 08 319 79" class="flex items-center p-4 rounded-xl border border-blue-100 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all duration-300 group bg-white/50 dark:bg-slate-900/40 overflow-hidden">
                   <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center mr-4 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/30 transition-colors border border-indigo-100 dark:border-slate-700">
-                    <span class="text-indigo-600 text-xl">📱</span>
+                    <i class="fas fa-phone text-indigo-600 text-xl"></i>
                   </div>
                   <div class="flex-1 min-w-0">
                     <div class="font-medium text-slate-700 dark:text-slate-300">Téléphone</div>
@@ -74,7 +74,7 @@
 
                 <a href="mailto:emersonconstanio2@gmail.com" class="flex items-center p-4 rounded-xl border border-blue-100 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:shadow-md transition-all duration-300 group bg-white/50 dark:bg-slate-900/40 overflow-hidden">
                   <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center mr-4 group-hover:bg-teal-100 dark:group-hover:bg-teal-900/30 transition-colors border border-teal-100 dark:border-slate-700">
-                    <span class="text-teal-600 text-xl">✉️</span>
+                    <i class="fas fa-envelope text-teal-600 text-xl"></i>
                   </div>
                   <div class="flex-1 min-w-0">
                     <div class="font-medium text-slate-700 dark:text-slate-300">Email</div>
@@ -131,7 +131,7 @@
               <div class="relative z-10">
                 <div class="flex items-center mb-6">
                   <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4 backdrop-blur-sm">
-                    <span class="text-xl">💼</span>
+                    <i class="fas fa-briefcase text-xl"></i>
                   </div>
                   <div>
                     <h3 class="text-2xl font-bold">Disponibilité</h3>
@@ -171,7 +171,7 @@
               <div class="space-y-4">
                 <div class="flex items-center p-3 rounded-lg bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-900 border border-amber-100 dark:border-slate-700 transition-colors duration-500">
                   <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/40 dark:to-orange-900/40 flex items-center justify-center mr-4 border border-amber-200 dark:border-slate-700 transition-colors duration-500">
-                    <span class="text-amber-600 text-lg">🎯</span>
+                    <i class="fas fa-bullseye text-amber-600 text-lg"></i>
                   </div>
                   <div>
                     <div class="font-medium text-slate-800 dark:text-slate-100">Passionné</div>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="flex items-center p-3 rounded-lg bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-slate-800 dark:to-slate-900 border border-teal-100 dark:border-slate-700 transition-colors duration-500">
                   <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-100 to-emerald-100 dark:from-teal-900/40 dark:to-emerald-900/40 flex items-center justify-center mr-4 border border-teal-200 dark:border-slate-700 transition-colors duration-500">
-                    <span class="text-teal-600 text-lg">⚡</span>
+                    <i class="fas fa-bolt text-teal-600 text-lg"></i>
                   </div>
                   <div>
                     <div class="font-medium text-slate-800 dark:text-slate-100">Rapide d'exécution</div>
@@ -189,7 +189,7 @@
                 </div>
                 <div class="flex items-center p-3 rounded-lg bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-900 border border-indigo-100 dark:border-slate-700 transition-colors duration-500">
                   <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/40 dark:to-purple-900/40 flex items-center justify-center mr-4 border border-indigo-200 dark:border-slate-700 transition-colors duration-500">
-                    <span class="text-indigo-600 text-lg">🤝</span>
+                    <i class="fas fa-handshake text-indigo-600 text-lg"></i>
                   </div>
                   <div>
                     <div class="font-medium text-slate-800 dark:text-slate-100">Collaboratif</div>
