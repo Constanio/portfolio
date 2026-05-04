@@ -17,6 +17,131 @@
 
       <!-- Experiences Container -->
       <div class="max-w-4xl mx-auto">
+        <!-- Experience ERP -->
+        <div class="relative mb-12">
+          <div class="flex items-start gap-0 md:gap-8">
+            <!-- Timeline Icon -->
+            <div class="hidden md:block flex-shrink-0">
+              <div class="w-14 h-14 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center shadow-lg border-2 border-white dark:border-slate-800">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+              <!-- Experience Header -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
+                <div>
+                  <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 text-amber-700 dark:text-amber-300 rounded-full text-sm font-semibold mb-3 border border-amber-200 dark:border-amber-800/50">
+                    <span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                    Stage
+                  </div>
+                  <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Stagiaire Développement Web Fullstack</h3>
+                </div>
+                <div class="flex-shrink-0">
+                  <div class="flex items-center text-slate-700 dark:text-slate-300 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-800 dark:to-slate-900 px-4 py-2 rounded-lg border border-amber-100 dark:border-slate-700 text-sm sm:text-base">
+                    <svg class="w-5 h-5 mr-2 text-amber-600 dark:text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="font-medium">Nexus-sarlu, Tamatave</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Description -->
+              <div class="bg-gradient-to-br from-white to-amber-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-6 mb-6 border-l-4 border-amber-500 border border-amber-100 dark:border-slate-700">
+                <div class="flex flex-col xs:flex-row items-start">
+                  <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 border border-amber-200 dark:border-amber-800/50">
+                    <span class="text-amber-600 dark:text-amber-400 text-xl">📊</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Projet ERP - Système de gestion centralisé</h4>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                      Conception du cahier des charges d'un ERP modulaire (Finance, CRM, Ventes, Helpdesk, Marketing, RH, Projets). 
+                      Définition des workflows métier, automatisations, reportings et choix technologiques.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-slate-800 dark:text-white mb-3 flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  Technologies utilisées
+                </h4>
+                <div class="flex flex-wrap gap-2 sm:gap-3">
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-slate-800 dark:to-slate-700 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium flex items-center border border-blue-100 dark:border-slate-600 hover:border-blue-300 dark:hover:border-blue-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mr-2"></span>
+                    Laravel
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-cyan-50 to-teal-50 dark:from-slate-800 dark:to-slate-700 text-cyan-700 dark:text-cyan-300 rounded-lg text-sm font-medium flex items-center border border-cyan-100 dark:border-slate-600 hover:border-cyan-300 dark:hover:border-cyan-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyan-500 rounded-full mr-2"></span>
+                    React
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-pink-50 to-rose-50 dark:from-slate-800 dark:to-slate-700 text-pink-700 dark:text-pink-300 rounded-lg text-sm font-medium flex items-center border border-pink-100 dark:border-slate-600 hover:border-pink-300 dark:hover:border-pink-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-pink-500 rounded-full mr-2"></span>
+                    Chart.js
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium flex items-center border border-purple-100 dark:border-slate-600 hover:border-purple-300 dark:hover:border-purple-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-purple-500 rounded-full mr-2"></span>
+                    Queues
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-red-50 to-orange-50 dark:from-slate-800 dark:to-slate-700 text-red-700 dark:text-red-300 rounded-lg text-sm font-medium flex items-center border border-red-100 dark:border-slate-600 hover:border-red-300 dark:hover:border-red-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-red-500 rounded-full mr-2"></span>
+                    PDF
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-700 text-green-700 dark:text-green-300 rounded-lg text-sm font-medium flex items-center border border-green-100 dark:border-slate-600 hover:border-green-300 dark:hover:border-green-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full mr-2"></span>
+                    API REST
+                  </span>
+                </div>
+              </div>
+
+              <!-- Key Responsibilities -->
+              <div class="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-slate-800 dark:to-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-700">
+                <h4 class="font-semibold text-slate-800 dark:text-white mb-4 flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Responsabilités
+                </h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Conception du cahier des charges et analyse des besoins métier</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Modélisation des workflows et des processus automatisés</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Définition de l'architecture technique (Laravel, React, API)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Conception des reportings et tableaux de bord analytiques</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Experience 1 -->
         <div class="relative mb-12">
           <div class="flex items-start gap-0 md:gap-8">
@@ -145,7 +270,7 @@
                     <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span>
                     Stage
                   </div>
-                  <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Développeur Web Full-Stack</h3>
+                  <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Stagiaire en développement web et administration systèmes et réseaux</h3>
                 </div>
                 <div class="flex-shrink-0">
                   <div class="flex items-center text-slate-700 dark:text-slate-300 bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-slate-800 dark:to-slate-900 px-4 py-2 rounded-lg border border-teal-100 dark:border-slate-700 text-sm sm:text-base">
@@ -153,7 +278,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <span class="font-medium">SYMRISE Madagascar</span>
+                    <span class="font-medium">SYMRISE, Sambava</span>
                   </div>
                 </div>
               </div>
@@ -167,8 +292,9 @@
                   <div>
                     <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Application de gestion de production</h4>
                     <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">
-                      Développement d'une application web pour la gestion de production de produits finis 
-                      (vanille, gingembre), incluant le suivi des stocks, la traçabilité et la gestion qualité.
+                      Participation à la conception et à la réalisation d'une application de gestion de production 
+                      de produits finis (vanille, gingembre), incluant le suivi des stocks, la traçabilité et la gestion qualité. 
+                      Missions en administration systèmes et réseaux.
                     </p>
                   </div>
                 </div>
@@ -199,6 +325,14 @@
                     <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-amber-500 rounded-full mr-2"></span>
                     REST API
                   </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-800 dark:to-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-medium flex items-center border border-slate-100 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-slate-500 rounded-full mr-2"></span>
+                    Linux
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium flex items-center border border-blue-100 dark:border-slate-600 hover:border-blue-300 dark:hover:border-blue-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mr-2"></span>
+                    Réseau
+                  </span>
                 </div>
               </div>
 
@@ -215,13 +349,13 @@
                     <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Développement frontend avec Vue.js</span>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Développement et maintenance d'applications web en Vue.js et Golang</span>
                   </li>
                   <li class="flex items-start">
                     <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Création d'API REST avec Go</span>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Participation à la conception de l'application de gestion de production</span>
                   </li>
                   <li class="flex items-start">
                     <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -233,7 +367,7 @@
                     <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Tests et déploiement de l'application</span>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Missions en administration systèmes et réseaux</span>
                   </li>
                 </ul>
               </div>
@@ -256,7 +390,7 @@
               <div class="md:col-span-3">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div class="text-center p-4 bg-white/60 dark:bg-slate-800/60 rounded-xl shadow-sm border border-indigo-100 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 transition-colors">
-                    <div class="text-3xl font-bold text-indigo-600 dark:text-indigo-400">2</div>
+                    <div class="text-3xl font-bold text-indigo-600 dark:text-indigo-400">3</div>
                     <div class="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Stages</div>
                   </div>
                   <div class="text-center p-4 bg-white/60 dark:bg-slate-800/60 rounded-xl shadow-sm border border-teal-100 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 transition-colors">
@@ -264,7 +398,7 @@
                     <div class="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Techs</div>
                   </div>
                   <div class="text-center p-4 bg-white/60 dark:bg-slate-800/60 rounded-xl shadow-sm border border-amber-100 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 transition-colors">
-                    <div class="text-3xl font-bold text-amber-600 dark:text-amber-400">2</div>
+                    <div class="text-3xl font-bold text-amber-600 dark:text-amber-400">3</div>
                     <div class="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Apps</div>
                   </div>
                 </div>

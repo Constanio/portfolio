@@ -64,7 +64,7 @@
                   </div>
                   <div class="flex-1 min-w-0">
                     <div class="font-medium text-slate-700 dark:text-slate-300">GitHub</div>
-                    <div class="text-slate-900 dark:text-white text-base sm:text-lg font-semibold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors truncate">RakotoarisoEConstanio_</div>
+                    <div class="text-slate-900 dark:text-white text-base sm:text-lg font-semibold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors truncate">Constanio</div>
                   </div>
                 </a>
               </div>
