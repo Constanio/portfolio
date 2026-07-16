@@ -45,16 +45,23 @@
 
       <!-- Action Button -->
       <div class="flex items-center justify-between">
-        <button 
+        <button
+          v-if="hasDemo"
           @click="handleViewProject"
-          class="flex-1 py-3 px-4 bg-gradient-to-r from-indigo-600 to-teal-600 text-white font-medium rounded-lg hover:from-indigo-700 hover:to-teal-700 transition-all duration-300 flex items-center justify-center group/btn shadow-md hover:shadow-lg"
+          class="flex-1 py-3 px-4 bg-gradient-to-r from-indigo-600 to-teal-600 text-white font-medium rounded-lg hover:from-indigo-700 hover:to-teal-700 transition-all duration-300 flex items-center justify-center group/btn shadow-md hover:shadow-lg cursor-pointer"
         >
           <span>Voir le projet</span>
           <svg class="w-4 h-4 ml-2 transform group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </button>
-        
+        <div
+          v-else
+          class="flex-1 py-3 px-4 bg-slate-100 dark:bg-slate-700/60 text-slate-500 dark:text-slate-400 font-medium rounded-lg flex items-center justify-center border border-slate-200 dark:border-slate-600"
+        >
+          Bientôt disponible
+        </div>
+
         <!-- GitHub Link -->
         <a 
           v-if="githubLink"
@@ -76,7 +83,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { computed, defineProps } from 'vue'
 
 const props = defineProps({
   title: String,
@@ -88,13 +95,15 @@ const props = defineProps({
   },
   demoLink: {
     type: String,
-    default: '#'
+    default: ''
   },
   githubLink: {
     type: String,
     default: ''
   }
 })
+
+const hasDemo = computed(() => Boolean(props.demoLink && props.demoLink !== '#'))
 
 const getProjectInitials = (title) => {
   return title
@@ -110,15 +119,16 @@ const getCategoryColor = (category) => {
     'Application Web': 'bg-gradient-to-b from-indigo-500 to-purple-500',
     'E-commerce': 'bg-gradient-to-b from-teal-500 to-emerald-500',
     'Santé': 'bg-gradient-to-b from-emerald-500 to-green-500',
-    'Gestion': 'bg-gradient-to-b from-blue-500 to-cyan-500'
+    'Gestion': 'bg-gradient-to-b from-blue-500 to-cyan-500',
+    'Mobile': 'bg-gradient-to-b from-cyan-500 to-teal-500',
+    'Business Intelligence': 'bg-gradient-to-b from-violet-500 to-fuchsia-500',
   }
   return colors[category] || 'bg-gradient-to-b from-indigo-500 to-purple-500'
 }
 
 const handleViewProject = () => {
-  const url = props.demoLink && props.demoLink !== '#' ? props.demoLink : props.githubLink
-  if (!url) return
-  window.open(url, '_blank', 'noopener,noreferrer')
+  if (!hasDemo.value) return
+  window.open(props.demoLink, '_blank', 'noopener,noreferrer')
 }
 </script>
 

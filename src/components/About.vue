@@ -93,6 +93,18 @@
                     <div class="text-slate-900 dark:text-white text-base sm:text-lg font-semibold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors truncate">Constanio</div>
                   </div>
                 </a>
+
+                <a href="https://www.linkedin.com/in/rakotoarison-emerson-constanio-31295426a/" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 rounded-xl border border-blue-100 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all duration-300 group bg-white/50 dark:bg-slate-900/40 overflow-hidden">
+                  <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-50 to-sky-50 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center mr-4 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30 transition-colors border border-blue-100 dark:border-slate-700">
+                    <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="font-medium text-slate-700 dark:text-slate-300">LinkedIn</div>
+                    <div class="text-slate-900 dark:text-white text-base sm:text-lg font-semibold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate">Rakotoarison Emerson</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

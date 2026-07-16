@@ -17,7 +17,7 @@
 
       <!-- Skills Grid -->
       <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Programming Languages -->
           <div class="bg-gradient-to-br from-white to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-indigo-100 dark:border-slate-700">
             <div class="flex items-center mb-8">
@@ -88,26 +88,56 @@
           </div>
 
           <!-- Frameworks & Tools -->
-          <div class="bg-gradient-to-br from-white to-amber-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-amber-100 dark:border-slate-700">
-            <div class="flex items-center mb-8">
-              <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 flex items-center justify-center mr-4 border border-amber-200 dark:border-amber-800/50">
+          <div class="bg-gradient-to-br from-white to-amber-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-amber-100 dark:border-slate-700 overflow-hidden">
+            <div class="flex items-center mb-8 min-w-0">
+              <div class="w-12 h-12 shrink-0 rounded-lg bg-gradient-to-r from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 flex items-center justify-center mr-4 border border-amber-200 dark:border-amber-800/50">
                 <svg class="w-6 h-6 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
-              <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Frameworks & Outils</h3>
+              <h3 class="text-2xl font-bold text-slate-800 dark:text-white leading-tight">Frameworks & Outils</h3>
             </div>
             
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div v-for="(framework, index) in frameworks" :key="index" 
-                   class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 rounded-lg p-4 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:border-indigo-200 dark:hover:border-indigo-500 border border-slate-200 dark:border-slate-600 transition-all duration-300 group">
-                <div class="flex items-center">
-                  <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center mr-3 border border-slate-300 dark:border-slate-600 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-colors">
+                   class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 rounded-lg p-3 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-purple-50 dark:hover:from-indigo-900/30 dark:hover:to-purple-900/30 hover:border-indigo-200 dark:hover:border-indigo-500 border border-slate-200 dark:border-slate-600 transition-all duration-300 group min-w-0 overflow-hidden">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-8 h-8 shrink-0 rounded-lg bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center border border-slate-300 dark:border-slate-600 group-hover:border-indigo-300 dark:group-hover:border-indigo-500 transition-colors">
                     <i :class="framework.icon + ' text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 text-sm'"></i>
                   </div>
+                  <div class="min-w-0 flex-1">
+                    <div class="font-medium text-slate-800 dark:text-slate-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-300 text-sm leading-snug break-words">{{ framework.name }}</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 truncate">{{ framework.category }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Intelligence -->
+          <div class="bg-gradient-to-br from-white to-violet-50 dark:from-slate-800 dark:to-slate-900 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-violet-100 dark:border-slate-700">
+            <div class="flex items-center mb-8">
+              <div class="w-12 h-12 rounded-lg bg-gradient-to-r from-violet-100 to-fuchsia-100 dark:from-violet-900/30 dark:to-fuchsia-900/30 flex items-center justify-center mr-4 border border-violet-200 dark:border-violet-800/50">
+                <svg class="w-6 h-6 text-violet-600 dark:text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Business Intelligence</h3>
+            </div>
+
+            <div class="space-y-4">
+              <div
+                v-for="(skill, index) in biSkills"
+                :key="index"
+                class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-700 dark:to-slate-800 rounded-lg p-4 border border-slate-200 dark:border-slate-600 hover:border-violet-300 dark:hover:border-violet-500 hover:bg-gradient-to-br hover:from-violet-50 hover:to-fuchsia-50 dark:hover:from-violet-900/30 dark:hover:to-fuchsia-900/30 transition-all duration-300 group"
+              >
+                <div class="flex items-center">
+                  <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-900/20 dark:to-fuchsia-900/20 flex items-center justify-center mr-3 border border-violet-200 dark:border-violet-800/50 group-hover:border-violet-300 dark:group-hover:border-violet-500 transition-colors">
+                    <i :class="skill.icon + ' text-violet-600 dark:text-violet-400 text-sm'"></i>
+                  </div>
                   <div>
-                    <div class="font-medium text-slate-800 dark:text-slate-200 group-hover:text-indigo-700 dark:group-hover:text-indigo-300">{{ framework.name }}</div>
-                    <div class="text-xs text-slate-500 dark:text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400">{{ framework.category }}</div>
+                    <div class="font-medium text-slate-800 dark:text-slate-200 group-hover:text-violet-700 dark:group-hover:text-violet-300">{{ skill.name }}</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400">{{ skill.category }}</div>
                   </div>
                 </div>
               </div>
@@ -126,14 +156,14 @@
               <span class="px-4 py-2 bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-700 text-slate-800 dark:text-slate-200 rounded-lg font-medium shadow-sm border border-slate-200 dark:border-slate-600 hover:border-indigo-300 dark:hover:border-indigo-500 hover:bg-white dark:hover:bg-slate-600 transition-colors">
                 Git & GitHub
               </span>
-              <span class="px-4 py-2 bg-gradient-to-br from-white to-blue-50 dark:from-slate-800 dark:to-slate-700 text-blue-800 dark:text-blue-300 rounded-lg font-medium shadow-sm border border-blue-200 dark:border-slate-600 hover:border-blue-300 dark:hover:border-blue-500 hover:bg-white dark:hover:bg-slate-600 transition-colors">
-                Docker
-              </span>
               <span class="px-4 py-2 bg-gradient-to-br from-white to-teal-50 dark:from-slate-800 dark:to-slate-700 text-teal-800 dark:text-teal-300 rounded-lg font-medium shadow-sm border border-teal-200 dark:border-slate-600 hover:border-teal-300 dark:hover:border-teal-500 hover:bg-white dark:hover:bg-slate-600 transition-colors">
                 REST API
               </span>
               <span class="px-4 py-2 bg-gradient-to-br from-white to-amber-50 dark:from-slate-800 dark:to-slate-700 text-amber-800 dark:text-amber-300 rounded-lg font-medium shadow-sm border border-amber-200 dark:border-slate-600 hover:border-amber-300 dark:hover:border-amber-500 hover:bg-white dark:hover:bg-slate-600 transition-colors">
                 Agile/Scrum
+              </span>
+              <span class="px-4 py-2 bg-gradient-to-br from-white to-violet-50 dark:from-slate-800 dark:to-slate-700 text-violet-800 dark:text-violet-300 rounded-lg font-medium shadow-sm border border-violet-200 dark:border-slate-600 hover:border-violet-300 dark:hover:border-violet-500 hover:bg-white dark:hover:bg-slate-600 transition-colors">
+                Reporting & KPI
               </span>
             </div>
           </div>
@@ -147,6 +177,7 @@
 const languages = [
   { name: 'JavaScript', level: 4, icon: 'fab fa-js' },
   { name: 'Golang', level: 4, icon: 'fab fa-golang' },
+  { name: 'Python', level: 3, icon: 'fab fa-python' },
   { name: 'Java', level: 3, icon: 'fab fa-java' },
   { name: '.NET', level: 4, icon: 'fab fa-microsoft' },
   { name: 'PHP', level: 4, icon: 'fab fa-php' }
@@ -165,6 +196,13 @@ const frameworks = [
   { name: 'Spring Boot', category: 'Backend', icon: 'fab fa-java' },
   { name: 'Fiber', category: 'Backend', icon: 'fab fa-golang' },
   { name: 'Laravel', category: 'Backend', icon: 'fab fa-laravel' }
+]
+
+const biSkills = [
+  { name: 'Power BI', category: 'Visualisation', icon: 'fas fa-chart-pie' },
+  { name: 'Jupyter Notebook', category: 'Analyse', icon: 'fas fa-book' },
+  { name: 'AutoML', category: 'Machine Learning', icon: 'fas fa-robot' },
+  { name: 'Tableaux de bord', category: 'Reporting', icon: 'fas fa-chart-bar' },
 ]
 </script>
 

@@ -52,56 +52,69 @@
 import ProjectCard from './ProjectCard.vue'
 
 const projects = [
-{
+  {
     id: 1,
     title: 'SIRH Flow',
-    description: 'Interface de gestion RH moderne (démo en ligne)',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Netlify'],
+    description: 'Système d\'information RH full-stack : interface de gestion moderne et API backend.',
+    technologies: ['Vue.js', 'Go', 'Tailwind CSS'],
     category: 'Application Web',
     demoLink: 'https://sirhexamplefront.netlify.app/',
     githubLink: 'https://github.com/Constanio/SIRH_example_front',
-    color: 'indigo'
-  },  
-{
-    id: 6,
-    title: 'Système ERP Complet',
-    description: 'Application ERP intégrant la gestion des ressources humaines, finances et e-commerce',
-    technologies: ['Vue.js', 'ASP.NET', 'PostgreSQL'],
-    category: 'Application Web',
-    demoLink: '#',
-    githubLink: '',
-    color: 'indigo'
   },
   {
     id: 2,
-    title: 'Business Operations Dashboard ',
+    title: 'Business Operations Dashboard',
     description: 'Application web dédiée à la gestion des opérations commerciales, permettant de suivre et analyser les activités en temps réel.',
-    technologies: ['Vue.js', 'Golang', 'PostgreSQL'],
+    technologies: ['Vue.js', 'Go', 'PostgreSQL'],
     category: 'Application Web',
     demoLink: 'https://flowerp12.netlify.app/',
-    color: 'indigo'
+    githubLink: 'https://github.com/Constanio/front_flowerp',
+  },
+  {
+    id: 3,
+    title: 'BuildTrack',
+    description: 'Plateforme de suivi de projets de construction : tableau de bord Vue et API .NET.',
+    technologies: ['Vue.js', 'C#', 'ASP.NET'],
+    category: 'Gestion',
+    demoLink: '',
+    githubLink: '',
   },
   {
     id: 4,
-    title: 'Gestion de Vente Informatique',
-    description: 'Plateforme de gestion de vente et stock d\'ordinateurs',
-    technologies: ['Nuxt.js', 'ASP.NET', 'PostgreSQL'],
-    category: 'E-commerce',
-    demoLink: '#',
-    githubLink: '',
-    color: 'blue'
+    title: 'KYC Golang',
+    description: 'Backend pour automatiser et sécuriser la vérification d\'identité des utilisateurs (Know Your Customer).',
+    technologies: ['Go'],
+    category: 'Application Web',
+    demoLink: '',
+    githubLink: 'https://github.com/Constanio/KYC_golang',
   },
   {
     id: 5,
-    title: 'Gestion de Stock',
-    description: 'Système de suivi de stock avec notifications et rapports',
-    technologies: ['Nuxt.js', 'ASP.NET', 'PostgreSQL'],
-    category: 'Gestion',
-    demoLink: '#',
-    githubLink: 'https://github.com/Constanio/Gestion_Stock_golang_back.git',
-    color: 'purple'
+    title: 'Vavaka Katolika',
+    description: 'Application mobile Flutter dédiée au contenu et à la pratique catholique.',
+    technologies: ['Flutter', 'Dart'],
+    category: 'Mobile',
+    demoLink: '',
+    githubLink: 'https://github.com/Constanio/vavaka-katolika',
   },
- 
+  {
+    id: 6,
+    title: 'Flutter Maïeutique',
+    description: 'Application mobile Flutter autour de la méthode maïeutique et de l\'accompagnement pédagogique.',
+    technologies: ['Flutter', 'Dart'],
+    category: 'Mobile',
+    demoLink: '',
+    githubLink: 'https://github.com/Constanio/flutter_maieutique',
+  },
+  {
+    id: 7,
+    title: 'BI AutoML',
+    description: 'Projet de Business Intelligence et AutoML : analyse de données et modèles prédictifs avec Jupyter Notebook.',
+    technologies: ['Python', 'Jupyter', 'AutoML'],
+    category: 'Business Intelligence',
+    demoLink: '',
+    githubLink: 'https://github.com/Constanio/BI_autoML',
+  },
 ]
 </script>
 

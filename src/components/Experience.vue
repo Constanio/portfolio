@@ -142,112 +142,7 @@
           </div>
         </div>
 
-        <!-- Experience 1 -->
-        <div class="relative mb-12">
-          <div class="flex items-start gap-0 md:gap-8">
-            <!-- Timeline Icon -->
-            <div class="hidden md:block flex-shrink-0">
-              <div class="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-500 to-teal-500 flex items-center justify-center shadow-lg border-2 border-white dark:border-slate-800">
-                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Content -->
-            <div class="flex-1">
-              <!-- Experience Header -->
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
-                <div>
-                  <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-100 to-teal-100 dark:from-indigo-900/30 dark:to-teal-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-semibold mb-3 border border-indigo-200 dark:border-indigo-800/50">
-                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
-                    Stage
-                  </div>
-                  <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Développeur Logiciel</h3>
-                </div>
-                <div class="flex-shrink-0">
-                  <div class="flex items-center text-slate-700 dark:text-slate-300 bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-900 px-4 py-2 rounded-lg border border-indigo-100 dark:border-slate-700 text-sm sm:text-base">
-                    <svg class="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span class="font-medium">SOAVOANIO, Sambava</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Description -->
-              <div class="bg-gradient-to-br from-white to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-6 mb-6 border-l-4 border-indigo-500 border border-indigo-100 dark:border-slate-700">
-                <div class="flex flex-col xs:flex-row items-start">
-                  <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 border border-indigo-200 dark:border-indigo-800/50">
-                    <i class="fas fa-hospital text-indigo-600 dark:text-indigo-400 text-xl"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Application de gestion médico-social</h4>
-                    <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">
-                      Conception et réalisation d'une application complète pour la gestion médico-social, 
-                      incluant la gestion des patients, des rendez-vous et des données médicales.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Technologies -->
-              <div class="mb-6">
-                <h4 class="font-semibold text-slate-800 dark:text-white mb-3 flex items-center">
-                  <svg class="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  Technologies utilisées
-                </h4>
-                <div class="flex flex-wrap gap-2 sm:gap-3">
-                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 text-indigo-700 dark:text-indigo-300 rounded-lg text-sm font-medium flex items-center border border-indigo-100 dark:border-slate-600 hover:border-indigo-300 dark:hover:border-indigo-500 transition-colors">
-                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-indigo-500 rounded-full mr-2"></span>
-                    C#
-                  </span>
-                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium flex items-center border border-purple-100 dark:border-slate-600 hover:border-purple-300 dark:hover:border-purple-500 transition-colors">
-                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-purple-500 rounded-full mr-2"></span>
-                    .NET
-                  </span>
-                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-slate-800 dark:to-slate-700 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium flex items-center border border-blue-100 dark:border-slate-600 hover:border-blue-300 dark:hover:border-blue-500 transition-colors">
-                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mr-2"></span>
-                    WinForms
-                  </span>
-                </div>
-              </div>
-
-              <!-- Key Responsibilities -->
-              <div class="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-slate-800 dark:to-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-700">
-                <h4 class="font-semibold text-slate-800 dark:text-white mb-4 flex items-center">
-                  <svg class="w-5 h-5 mr-2 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  Responsabilités
-                </h4>
-                <ul class="space-y-3">
-                  <li class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Développement de fonctionnalités en C# et .NET</span>
-                  </li>
-                  <li class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Maintenance et optimisation de l'application existante</span>
-                  </li>
-                  <li class="flex items-start">
-                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Tests et débogage des fonctionnalités</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         <!-- Experience 2 -->
         <div class="relative">
@@ -368,6 +263,113 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Missions en administration systèmes et réseaux</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 1 -->
+        <div class="relative mb-12">
+          <div class="flex items-start gap-0 md:gap-8">
+            <!-- Timeline Icon -->
+            <div class="hidden md:block flex-shrink-0">
+              <div class="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-500 to-teal-500 flex items-center justify-center shadow-lg border-2 border-white dark:border-slate-800">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex-1">
+              <!-- Experience Header -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
+                <div>
+                  <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-100 to-teal-100 dark:from-indigo-900/30 dark:to-teal-900/30 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-semibold mb-3 border border-indigo-200 dark:border-indigo-800/50">
+                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    Stage
+                  </div>
+                  <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Développeur Logiciel</h3>
+                </div>
+                <div class="flex-shrink-0">
+                  <div class="flex items-center text-slate-700 dark:text-slate-300 bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-900 px-4 py-2 rounded-lg border border-indigo-100 dark:border-slate-700 text-sm sm:text-base">
+                    <svg class="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span class="font-medium">SOAVOANIO, Sambava</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Description -->
+              <div class="bg-gradient-to-br from-white to-indigo-50 dark:from-slate-800 dark:to-slate-900 rounded-xl shadow-lg p-6 mb-6 border-l-4 border-indigo-500 border border-indigo-100 dark:border-slate-700">
+                <div class="flex flex-col xs:flex-row items-start">
+                  <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/30 dark:to-purple-900/30 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4 border border-indigo-200 dark:border-indigo-800/50">
+                    <i class="fas fa-hospital text-indigo-600 dark:text-indigo-400 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-800 dark:text-white mb-2">Application de gestion médico-social</h4>
+                    <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                      Conception et réalisation d'une application complète pour la gestion médico-social, 
+                      incluant la gestion des patients, des rendez-vous et des données médicales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <div class="mb-6">
+                <h4 class="font-semibold text-slate-800 dark:text-white mb-3 flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  Technologies utilisées
+                </h4>
+                <div class="flex flex-wrap gap-2 sm:gap-3">
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 text-indigo-700 dark:text-indigo-300 rounded-lg text-sm font-medium flex items-center border border-indigo-100 dark:border-slate-600 hover:border-indigo-300 dark:hover:border-indigo-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    C#
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 text-purple-700 dark:text-purple-300 rounded-lg text-sm font-medium flex items-center border border-purple-100 dark:border-slate-600 hover:border-purple-300 dark:hover:border-purple-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-purple-500 rounded-full mr-2"></span>
+                    .NET
+                  </span>
+                  <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-slate-800 dark:to-slate-700 text-blue-700 dark:text-blue-300 rounded-lg text-sm font-medium flex items-center border border-blue-100 dark:border-slate-600 hover:border-blue-300 dark:hover:border-blue-500 transition-colors">
+                    <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full mr-2"></span>
+                    WinForms
+                  </span>
+                </div>
+              </div>
+
+              <!-- Key Responsibilities -->
+              <div class="bg-gradient-to-br from-slate-50 to-gray-50 dark:from-slate-800 dark:to-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-700">
+                <h4 class="font-semibold text-slate-800 dark:text-white mb-4 flex items-center">
+                  <svg class="w-5 h-5 mr-2 text-teal-600 dark:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Responsabilités
+                </h4>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Développement de fonctionnalités en C# et .NET</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Maintenance et optimisation de l'application existante</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-emerald-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base">Tests et débogage des fonctionnalités</span>
                   </li>
                 </ul>
               </div>
